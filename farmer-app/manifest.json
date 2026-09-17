@@ -1,0 +1,16 @@
+{
+  "name": "पशुरक्षक - शेतकरी ॲप (PashuRakshak)",
+  "short_name": "पशुरक्षक",
+  "description": "AI-Powered Livestock Health Surveillance Platform for Rural Farmers",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0B1512",
+  "theme_color": "#10B981",
+  "icons": [
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

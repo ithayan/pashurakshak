@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  ai-core:
+    build:
+      context: ./ai-core
+      dockerfile: Dockerfile
+    container_name: pashurakshak-ai-core
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./digital-twin/models:/app/digital-twin/models:ro
+    environment:
+      - DEFAULT_LANGUAGE=mr
+      - HIGH_RISK_THRESHOLD=0.70
+      - MEDIUM_RISK_THRESHOLD=0.40
+    restart: unless-stopped
+
+  farmer-app:
+    image: nginx:alpine
+    container_name: pashurakshak-farmer-app
+    ports:
+      - "3000:80"
+    volumes:
+      - ./farmer-app:/usr/share/nginx/html:ro
+    depends_on:
+      - ai-core
+    restart: unless-stopped
+
+  vet-dashboard:
+    image: nginx:alpine
+    container_name: pashurakshak-vet-dashboard
+    ports:
+      - "4000:80"
+    volumes:
+      - ./vet-dashboard:/usr/share/nginx/html:ro
+    depends_on:
+      - ai-core
+    restart: unless-stopped

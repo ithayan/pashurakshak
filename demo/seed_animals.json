@@ -1,0 +1,1610 @@
+[
+  {
+    "animal_id": "MAH-PUN-TAG-1000",
+    "tag_number": "गाय #1 (लक्ष्मी)",
+    "district": "Pune",
+    "breed": "Gir-HF Cross (गिर संकर)",
+    "age": 3.0,
+    "status": "HEALTHY",
+    "condition": "Healthy",
+    "current_vitals": {
+      "temperature": 38.17,
+      "temp_delta_24h": -0.02,
+      "rumination_minutes": 445.5,
+      "feeding_minutes": 265.1,
+      "activity_index": 84.3
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.52,
+        "rumination": 453.0,
+        "feeding": 274.6,
+        "activity": 94.5
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.5,
+        "rumination": 451.9,
+        "feeding": 275.1,
+        "activity": 94.0
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.5,
+        "rumination": 454.6,
+        "feeding": 272.8,
+        "activity": 95.6
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.53,
+        "rumination": 452.9,
+        "feeding": 274.4,
+        "activity": 94.6
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.52,
+        "rumination": 453.3,
+        "feeding": 272.8,
+        "activity": 95.5
+      },
+      {
+        "day": "शनि",
+        "temperature": 38.51,
+        "rumination": 454.9,
+        "feeding": 273.7,
+        "activity": 95.0
+      },
+      {
+        "day": "आज",
+        "temperature": 38.51,
+        "rumination": 450.9,
+        "feeding": 273.9,
+        "activity": 96.1
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-AHM-TAG-1001",
+    "tag_number": "गाय #2 (गोदावरी)",
+    "district": "Ahmednagar",
+    "breed": "Khillari (खिल्लारी)",
+    "age": 3.8,
+    "status": "HEALTHY",
+    "condition": "Healthy",
+    "current_vitals": {
+      "temperature": 38.38,
+      "temp_delta_24h": -0.09,
+      "rumination_minutes": 426.4,
+      "feeding_minutes": 243.0,
+      "activity_index": 97.8
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.69,
+        "rumination": 434.8,
+        "feeding": 264.7,
+        "activity": 115.5
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.67,
+        "rumination": 429.3,
+        "feeding": 265.3,
+        "activity": 114.7
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.7,
+        "rumination": 429.0,
+        "feeding": 265.6,
+        "activity": 114.7
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.71,
+        "rumination": 429.7,
+        "feeding": 267.7,
+        "activity": 116.5
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.69,
+        "rumination": 434.5,
+        "feeding": 265.4,
+        "activity": 114.8
+      },
+      {
+        "day": "शनि",
+        "temperature": 38.7,
+        "rumination": 430.2,
+        "feeding": 262.2,
+        "activity": 114.8
+      },
+      {
+        "day": "आज",
+        "temperature": 38.68,
+        "rumination": 432.5,
+        "feeding": 266.4,
+        "activity": 114.9
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-KOL-TAG-1002",
+    "tag_number": "गाय #3 (राणी)",
+    "district": "Kolhapur",
+    "breed": "Murrah Buffalo (मुर्रा म्हैस)",
+    "age": 4.6,
+    "status": "HEALTHY",
+    "condition": "Healthy",
+    "current_vitals": {
+      "temperature": 38.1,
+      "temp_delta_24h": -0.07,
+      "rumination_minutes": 449.2,
+      "feeding_minutes": 241.8,
+      "activity_index": 86.0
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.49,
+        "rumination": 446.7,
+        "feeding": 264.0,
+        "activity": 102.5
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.45,
+        "rumination": 448.8,
+        "feeding": 266.8,
+        "activity": 103.3
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.47,
+        "rumination": 448.0,
+        "feeding": 262.2,
+        "activity": 103.8
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.49,
+        "rumination": 446.5,
+        "feeding": 265.0,
+        "activity": 101.6
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.45,
+        "rumination": 447.7,
+        "feeding": 262.5,
+        "activity": 102.2
+      },
+      {
+        "day": "शनि",
+        "temperature": 38.46,
+        "rumination": 448.4,
+        "feeding": 263.7,
+        "activity": 101.8
+      },
+      {
+        "day": "आज",
+        "temperature": 38.49,
+        "rumination": 448.6,
+        "feeding": 265.5,
+        "activity": 100.0
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-SOL-TAG-1003",
+    "tag_number": "गाय #4 (गंगा)",
+    "district": "Solapur",
+    "breed": "Red Kandhari (लाल कंधारी)",
+    "age": 5.4,
+    "status": "HEALTHY",
+    "condition": "Healthy",
+    "current_vitals": {
+      "temperature": 37.9,
+      "temp_delta_24h": -0.17,
+      "rumination_minutes": 427.5,
+      "feeding_minutes": 275.4,
+      "activity_index": 94.7
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.35,
+        "rumination": 450.8,
+        "feeding": 287.0,
+        "activity": 102.6
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.37,
+        "rumination": 447.6,
+        "feeding": 288.7,
+        "activity": 103.0
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.35,
+        "rumination": 447.9,
+        "feeding": 287.4,
+        "activity": 104.4
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.34,
+        "rumination": 446.9,
+        "feeding": 289.1,
+        "activity": 103.5
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.36,
+        "rumination": 445.1,
+        "feeding": 286.5,
+        "activity": 104.1
+      },
+      {
+        "day": "शनि",
+        "temperature": 38.37,
+        "rumination": 449.5,
+        "feeding": 288.4,
+        "activity": 103.3
+      },
+      {
+        "day": "आज",
+        "temperature": 38.37,
+        "rumination": 448.0,
+        "feeding": 288.4,
+        "activity": 103.6
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-NAS-TAG-1004",
+    "tag_number": "गाय #5 (सोनम)",
+    "district": "Nashik",
+    "breed": "Gir-HF Cross (गिर संकर)",
+    "age": 6.2,
+    "status": "HEALTHY",
+    "condition": "Healthy",
+    "current_vitals": {
+      "temperature": 38.23,
+      "temp_delta_24h": 0.07,
+      "rumination_minutes": 480.7,
+      "feeding_minutes": 244.6,
+      "activity_index": 84.5
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.56,
+        "rumination": 485.4,
+        "feeding": 270.0,
+        "activity": 102.2
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.55,
+        "rumination": 483.2,
+        "feeding": 268.8,
+        "activity": 103.4
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.54,
+        "rumination": 486.3,
+        "feeding": 270.4,
+        "activity": 104.7
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.52,
+        "rumination": 487.1,
+        "feeding": 271.4,
+        "activity": 102.5
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.54,
+        "rumination": 485.6,
+        "feeding": 270.9,
+        "activity": 104.1
+      },
+      {
+        "day": "शनि",
+        "temperature": 38.57,
+        "rumination": 489.8,
+        "feeding": 270.0,
+        "activity": 104.1
+      },
+      {
+        "day": "आज",
+        "temperature": 38.57,
+        "rumination": 485.6,
+        "feeding": 269.9,
+        "activity": 102.8
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-SAT-TAG-1005",
+    "tag_number": "गाय #6 (कस्तुरी)",
+    "district": "Satara",
+    "breed": "Khillari (खिल्लारी)",
+    "age": 7.0,
+    "status": "HEALTHY",
+    "condition": "Healthy",
+    "current_vitals": {
+      "temperature": 38.12,
+      "temp_delta_24h": -0.05,
+      "rumination_minutes": 498.2,
+      "feeding_minutes": 236.7,
+      "activity_index": 79.0
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.47,
+        "rumination": 496.5,
+        "feeding": 255.2,
+        "activity": 96.7
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.5,
+        "rumination": 494.6,
+        "feeding": 256.4,
+        "activity": 96.2
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.47,
+        "rumination": 496.3,
+        "feeding": 256.7,
+        "activity": 97.6
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.48,
+        "rumination": 498.7,
+        "feeding": 257.3,
+        "activity": 95.9
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.5,
+        "rumination": 497.6,
+        "feeding": 253.9,
+        "activity": 96.2
+      },
+      {
+        "day": "शनि",
+        "temperature": 38.49,
+        "rumination": 495.3,
+        "feeding": 255.6,
+        "activity": 96.6
+      },
+      {
+        "day": "आज",
+        "temperature": 38.48,
+        "rumination": 495.9,
+        "feeding": 256.5,
+        "activity": 96.9
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-PUN-TAG-1006",
+    "tag_number": "गाय #7 (चमेली)",
+    "district": "Pune",
+    "breed": "Murrah Buffalo (मुर्रा म्हैस)",
+    "age": 3.0,
+    "status": "HEALTHY",
+    "condition": "Healthy",
+    "current_vitals": {
+      "temperature": 38.13,
+      "temp_delta_24h": 0.03,
+      "rumination_minutes": 431.2,
+      "feeding_minutes": 228.6,
+      "activity_index": 90.6
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.45,
+        "rumination": 442.1,
+        "feeding": 244.9,
+        "activity": 104.9
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.45,
+        "rumination": 442.5,
+        "feeding": 247.8,
+        "activity": 105.0
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.48,
+        "rumination": 438.1,
+        "feeding": 244.5,
+        "activity": 106.5
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.45,
+        "rumination": 437.9,
+        "feeding": 245.5,
+        "activity": 105.5
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.48,
+        "rumination": 440.2,
+        "feeding": 247.2,
+        "activity": 105.2
+      },
+      {
+        "day": "शनि",
+        "temperature": 38.44,
+        "rumination": 444.0,
+        "feeding": 246.7,
+        "activity": 106.5
+      },
+      {
+        "day": "आज",
+        "temperature": 38.44,
+        "rumination": 441.9,
+        "feeding": 244.7,
+        "activity": 105.5
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-AHM-TAG-1007",
+    "tag_number": "गाय #8 (कावेरी)",
+    "district": "Ahmednagar",
+    "breed": "Red Kandhari (लाल कंधारी)",
+    "age": 3.8,
+    "status": "HEALTHY",
+    "condition": "Healthy",
+    "current_vitals": {
+      "temperature": 37.89,
+      "temp_delta_24h": -0.08,
+      "rumination_minutes": 444.4,
+      "feeding_minutes": 228.6,
+      "activity_index": 83.7
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.25,
+        "rumination": 426.9,
+        "feeding": 254.0,
+        "activity": 103.7
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.26,
+        "rumination": 430.5,
+        "feeding": 253.2,
+        "activity": 101.9
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.28,
+        "rumination": 428.8,
+        "feeding": 255.4,
+        "activity": 101.7
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.26,
+        "rumination": 428.7,
+        "feeding": 253.9,
+        "activity": 100.3
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.26,
+        "rumination": 428.8,
+        "feeding": 251.1,
+        "activity": 102.8
+      },
+      {
+        "day": "शनि",
+        "temperature": 38.26,
+        "rumination": 432.0,
+        "feeding": 254.5,
+        "activity": 101.8
+      },
+      {
+        "day": "आज",
+        "temperature": 38.24,
+        "rumination": 427.3,
+        "feeding": 254.7,
+        "activity": 102.3
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-KOL-TAG-1008",
+    "tag_number": "गाय #9 (मंगला)",
+    "district": "Kolhapur",
+    "breed": "Gir-HF Cross (गिर संकर)",
+    "age": 4.6,
+    "status": "HEALTHY",
+    "condition": "Healthy",
+    "current_vitals": {
+      "temperature": 38.04,
+      "temp_delta_24h": -0.08,
+      "rumination_minutes": 488.7,
+      "feeding_minutes": 215.1,
+      "activity_index": 73.0
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.38,
+        "rumination": 492.4,
+        "feeding": 231.7,
+        "activity": 91.4
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.42,
+        "rumination": 494.3,
+        "feeding": 229.4,
+        "activity": 92.0
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.42,
+        "rumination": 493.5,
+        "feeding": 228.7,
+        "activity": 90.4
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.4,
+        "rumination": 496.2,
+        "feeding": 232.5,
+        "activity": 91.6
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.42,
+        "rumination": 492.1,
+        "feeding": 231.6,
+        "activity": 91.8
+      },
+      {
+        "day": "शनि",
+        "temperature": 38.4,
+        "rumination": 494.7,
+        "feeding": 233.6,
+        "activity": 91.2
+      },
+      {
+        "day": "आज",
+        "temperature": 38.41,
+        "rumination": 493.3,
+        "feeding": 233.1,
+        "activity": 90.5
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-SOL-TAG-1009",
+    "tag_number": "गाय #10 (अनुसया)",
+    "district": "Solapur",
+    "breed": "Khillari (खिल्लारी)",
+    "age": 5.4,
+    "status": "HEALTHY",
+    "condition": "Healthy",
+    "current_vitals": {
+      "temperature": 38.22,
+      "temp_delta_24h": 0.07,
+      "rumination_minutes": 432.7,
+      "feeding_minutes": 232.6,
+      "activity_index": 91.4
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.53,
+        "rumination": 443.9,
+        "feeding": 257.4,
+        "activity": 107.5
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.54,
+        "rumination": 443.9,
+        "feeding": 257.8,
+        "activity": 106.1
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.53,
+        "rumination": 444.5,
+        "feeding": 258.8,
+        "activity": 107.1
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.54,
+        "rumination": 444.2,
+        "feeding": 259.8,
+        "activity": 106.1
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.54,
+        "rumination": 444.0,
+        "feeding": 259.0,
+        "activity": 105.9
+      },
+      {
+        "day": "शनि",
+        "temperature": 38.55,
+        "rumination": 444.1,
+        "feeding": 259.3,
+        "activity": 106.4
+      },
+      {
+        "day": "आज",
+        "temperature": 38.52,
+        "rumination": 441.3,
+        "feeding": 261.5,
+        "activity": 106.8
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-NAS-TAG-1010",
+    "tag_number": "गाय #11 (लक्ष्मी)",
+    "district": "Nashik",
+    "breed": "Murrah Buffalo (मुर्रा म्हैस)",
+    "age": 6.2,
+    "status": "CRITICAL",
+    "condition": "Mastitis",
+    "current_vitals": {
+      "temperature": 39.33,
+      "temp_delta_24h": 0.26,
+      "rumination_minutes": 325.5,
+      "feeding_minutes": 189.2,
+      "activity_index": 61.3
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.52,
+        "rumination": 461.5,
+        "feeding": 273.3,
+        "activity": 100.4
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.56,
+        "rumination": 463.8,
+        "feeding": 270.4,
+        "activity": 99.6
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.54,
+        "rumination": 464.7,
+        "feeding": 269.9,
+        "activity": 97.4
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.59,
+        "rumination": 454.4,
+        "feeding": 269.9,
+        "activity": 98.6
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.88,
+        "rumination": 418.2,
+        "feeding": 254.0,
+        "activity": 94.4
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.27,
+        "rumination": 372.8,
+        "feeding": 236.5,
+        "activity": 88.7
+      },
+      {
+        "day": "आज",
+        "temperature": 39.62,
+        "rumination": 332.3,
+        "feeding": 216.0,
+        "activity": 82.8
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-SAT-TAG-1011",
+    "tag_number": "गाय #12 (गोदावरी)",
+    "district": "Satara",
+    "breed": "Red Kandhari (लाल कंधारी)",
+    "age": 7.0,
+    "status": "CRITICAL",
+    "condition": "Mastitis",
+    "current_vitals": {
+      "temperature": 39.27,
+      "temp_delta_24h": 0.48,
+      "rumination_minutes": 309.7,
+      "feeding_minutes": 149.4,
+      "activity_index": 68.4
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.33,
+        "rumination": 463.5,
+        "feeding": 227.3,
+        "activity": 102.3
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.33,
+        "rumination": 462.0,
+        "feeding": 226.9,
+        "activity": 101.5
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.36,
+        "rumination": 463.8,
+        "feeding": 229.0,
+        "activity": 101.4
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.39,
+        "rumination": 459.8,
+        "feeding": 225.1,
+        "activity": 102.0
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.72,
+        "rumination": 417.0,
+        "feeding": 207.9,
+        "activity": 98.4
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.06,
+        "rumination": 373.1,
+        "feeding": 190.2,
+        "activity": 90.8
+      },
+      {
+        "day": "आज",
+        "temperature": 39.45,
+        "rumination": 329.6,
+        "feeding": 174.9,
+        "activity": 86.6
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-PUN-TAG-1012",
+    "tag_number": "गाय #13 (राणी)",
+    "district": "Pune",
+    "breed": "Gir-HF Cross (गिर संकर)",
+    "age": 3.0,
+    "status": "CRITICAL",
+    "condition": "Mastitis",
+    "current_vitals": {
+      "temperature": 39.49,
+      "temp_delta_24h": 0.36,
+      "rumination_minutes": 277.4,
+      "feeding_minutes": 195.7,
+      "activity_index": 78.7
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.65,
+        "rumination": 427.5,
+        "feeding": 280.8,
+        "activity": 105.8
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.68,
+        "rumination": 425.3,
+        "feeding": 279.4,
+        "activity": 106.9
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.67,
+        "rumination": 426.1,
+        "feeding": 279.9,
+        "activity": 105.3
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.7,
+        "rumination": 422.4,
+        "feeding": 277.9,
+        "activity": 104.5
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.98,
+        "rumination": 385.1,
+        "feeding": 261.6,
+        "activity": 101.3
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.35,
+        "rumination": 341.4,
+        "feeding": 243.9,
+        "activity": 96.0
+      },
+      {
+        "day": "आज",
+        "temperature": 39.71,
+        "rumination": 296.1,
+        "feeding": 227.1,
+        "activity": 91.6
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-AHM-TAG-1013",
+    "tag_number": "गाय #14 (गंगा)",
+    "district": "Ahmednagar",
+    "breed": "Khillari (खिल्लारी)",
+    "age": 3.8,
+    "status": "CRITICAL",
+    "condition": "Mastitis",
+    "current_vitals": {
+      "temperature": 39.34,
+      "temp_delta_24h": 0.55,
+      "rumination_minutes": 274.8,
+      "feeding_minutes": 169.9,
+      "activity_index": 65.9
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.37,
+        "rumination": 434.9,
+        "feeding": 257.6,
+        "activity": 99.2
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.34,
+        "rumination": 436.9,
+        "feeding": 258.3,
+        "activity": 97.3
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.38,
+        "rumination": 433.6,
+        "feeding": 257.0,
+        "activity": 96.3
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.42,
+        "rumination": 431.0,
+        "feeding": 253.7,
+        "activity": 95.7
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.7,
+        "rumination": 391.0,
+        "feeding": 239.5,
+        "activity": 93.1
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.06,
+        "rumination": 347.3,
+        "feeding": 221.1,
+        "activity": 88.1
+      },
+      {
+        "day": "आज",
+        "temperature": 39.43,
+        "rumination": 304.9,
+        "feeding": 204.8,
+        "activity": 80.7
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-KOL-TAG-1014",
+    "tag_number": "गाय #15 (सोनम)",
+    "district": "Kolhapur",
+    "breed": "Murrah Buffalo (मुर्रा म्हैस)",
+    "age": 4.6,
+    "status": "CRITICAL",
+    "condition": "Mastitis",
+    "current_vitals": {
+      "temperature": 39.52,
+      "temp_delta_24h": 0.34,
+      "rumination_minutes": 290.9,
+      "feeding_minutes": 183.8,
+      "activity_index": 68.2
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.59,
+        "rumination": 457.6,
+        "feeding": 259.9,
+        "activity": 104.0
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.58,
+        "rumination": 456.9,
+        "feeding": 258.2,
+        "activity": 104.6
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.61,
+        "rumination": 455.6,
+        "feeding": 260.0,
+        "activity": 103.8
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.61,
+        "rumination": 453.2,
+        "feeding": 254.3,
+        "activity": 105.2
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.94,
+        "rumination": 412.9,
+        "feeding": 241.3,
+        "activity": 99.9
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.31,
+        "rumination": 371.3,
+        "feeding": 223.5,
+        "activity": 93.9
+      },
+      {
+        "day": "आज",
+        "temperature": 39.67,
+        "rumination": 326.0,
+        "feeding": 203.9,
+        "activity": 90.2
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-SOL-TAG-1015",
+    "tag_number": "गाय #16 (कस्तुरी)",
+    "district": "Solapur",
+    "breed": "Red Kandhari (लाल कंधारी)",
+    "age": 5.4,
+    "status": "CRITICAL",
+    "condition": "FMD",
+    "current_vitals": {
+      "temperature": 39.76,
+      "temp_delta_24h": 0.4,
+      "rumination_minutes": 249.5,
+      "feeding_minutes": 90.8,
+      "activity_index": 32.3
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.46,
+        "rumination": 458.9,
+        "feeding": 236.0,
+        "activity": 98.6
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.46,
+        "rumination": 461.7,
+        "feeding": 235.9,
+        "activity": 98.1
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.45,
+        "rumination": 459.8,
+        "feeding": 237.1,
+        "activity": 98.6
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.51,
+        "rumination": 452.0,
+        "feeding": 230.3,
+        "activity": 97.6
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.93,
+        "rumination": 401.1,
+        "feeding": 200.5,
+        "activity": 86.1
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.45,
+        "rumination": 343.7,
+        "feeding": 161.2,
+        "activity": 72.2
+      },
+      {
+        "day": "आज",
+        "temperature": 39.94,
+        "rumination": 280.3,
+        "feeding": 127.8,
+        "activity": 59.1
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-NAS-TAG-1016",
+    "tag_number": "गाय #17 (चमेली)",
+    "district": "Nashik",
+    "breed": "Gir-HF Cross (गिर संकर)",
+    "age": 6.2,
+    "status": "CRITICAL",
+    "condition": "FMD",
+    "current_vitals": {
+      "temperature": 39.98,
+      "temp_delta_24h": 0.45,
+      "rumination_minutes": 241.9,
+      "feeding_minutes": 133.7,
+      "activity_index": 31.3
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.62,
+        "rumination": 462.2,
+        "feeding": 266.8,
+        "activity": 95.0
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.63,
+        "rumination": 460.8,
+        "feeding": 266.5,
+        "activity": 93.0
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.6,
+        "rumination": 461.9,
+        "feeding": 268.4,
+        "activity": 93.0
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.67,
+        "rumination": 452.9,
+        "feeding": 264.4,
+        "activity": 91.1
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 39.11,
+        "rumination": 400.1,
+        "feeding": 229.6,
+        "activity": 81.1
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.62,
+        "rumination": 339.5,
+        "feeding": 195.1,
+        "activity": 67.3
+      },
+      {
+        "day": "आज",
+        "temperature": 40.14,
+        "rumination": 276.6,
+        "feeding": 158.1,
+        "activity": 54.0
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-SAT-TAG-1017",
+    "tag_number": "गाय #18 (कावेरी)",
+    "district": "Satara",
+    "breed": "Khillari (खिल्लारी)",
+    "age": 7.0,
+    "status": "CRITICAL",
+    "condition": "FMD",
+    "current_vitals": {
+      "temperature": 39.43,
+      "temp_delta_24h": 0.66,
+      "rumination_minutes": 269.8,
+      "feeding_minutes": 108.2,
+      "activity_index": 45.5
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.07,
+        "rumination": 481.9,
+        "feeding": 252.6,
+        "activity": 97.3
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.05,
+        "rumination": 478.6,
+        "feeding": 254.9,
+        "activity": 98.2
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.03,
+        "rumination": 480.3,
+        "feeding": 254.7,
+        "activity": 99.2
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.11,
+        "rumination": 476.4,
+        "feeding": 250.7,
+        "activity": 95.1
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.52,
+        "rumination": 422.7,
+        "feeding": 219.5,
+        "activity": 85.0
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.02,
+        "rumination": 365.5,
+        "feeding": 182.3,
+        "activity": 72.5
+      },
+      {
+        "day": "आज",
+        "temperature": 39.54,
+        "rumination": 298.6,
+        "feeding": 145.9,
+        "activity": 59.5
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-PUN-TAG-1018",
+    "tag_number": "गाय #19 (मंगला)",
+    "district": "Pune",
+    "breed": "Murrah Buffalo (मुर्रा म्हैस)",
+    "age": 3.0,
+    "status": "CRITICAL",
+    "condition": "FMD",
+    "current_vitals": {
+      "temperature": 39.73,
+      "temp_delta_24h": 0.23,
+      "rumination_minutes": 270.2,
+      "feeding_minutes": 116.2,
+      "activity_index": 43.0
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.47,
+        "rumination": 487.6,
+        "feeding": 271.9,
+        "activity": 106.7
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.43,
+        "rumination": 489.0,
+        "feeding": 274.1,
+        "activity": 105.5
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.49,
+        "rumination": 490.6,
+        "feeding": 272.5,
+        "activity": 105.8
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.5,
+        "rumination": 485.7,
+        "feeding": 270.2,
+        "activity": 104.9
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.95,
+        "rumination": 431.3,
+        "feeding": 237.8,
+        "activity": 93.1
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.45,
+        "rumination": 373.1,
+        "feeding": 201.5,
+        "activity": 80.5
+      },
+      {
+        "day": "आज",
+        "temperature": 39.97,
+        "rumination": 307.9,
+        "feeding": 164.8,
+        "activity": 65.0
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-AHM-TAG-1019",
+    "tag_number": "गाय #20 (अनुसया)",
+    "district": "Ahmednagar",
+    "breed": "Red Kandhari (लाल कंधारी)",
+    "age": 3.8,
+    "status": "WARNING",
+    "condition": "LSD",
+    "current_vitals": {
+      "temperature": 39.41,
+      "temp_delta_24h": 0.43,
+      "rumination_minutes": 346.0,
+      "feeding_minutes": 171.7,
+      "activity_index": 56.3
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.37,
+        "rumination": 457.6,
+        "feeding": 259.8,
+        "activity": 107.2
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.38,
+        "rumination": 456.2,
+        "feeding": 261.4,
+        "activity": 106.4
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.37,
+        "rumination": 458.2,
+        "feeding": 259.3,
+        "activity": 108.1
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.41,
+        "rumination": 452.1,
+        "feeding": 256.9,
+        "activity": 106.9
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.75,
+        "rumination": 422.5,
+        "feeding": 238.2,
+        "activity": 98.3
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.14,
+        "rumination": 386.5,
+        "feeding": 217.0,
+        "activity": 92.4
+      },
+      {
+        "day": "आज",
+        "temperature": 39.53,
+        "rumination": 348.9,
+        "feeding": 195.0,
+        "activity": 79.2
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-KOL-TAG-1020",
+    "tag_number": "गाय #21 (लक्ष्मी)",
+    "district": "Kolhapur",
+    "breed": "Gir-HF Cross (गिर संकर)",
+    "age": 4.6,
+    "status": "WARNING",
+    "condition": "LSD",
+    "current_vitals": {
+      "temperature": 39.38,
+      "temp_delta_24h": 0.25,
+      "rumination_minutes": 347.0,
+      "feeding_minutes": 136.5,
+      "activity_index": 59.7
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.48,
+        "rumination": 476.8,
+        "feeding": 247.7,
+        "activity": 97.9
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.51,
+        "rumination": 478.1,
+        "feeding": 248.1,
+        "activity": 99.1
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.47,
+        "rumination": 480.2,
+        "feeding": 247.5,
+        "activity": 98.0
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.53,
+        "rumination": 475.0,
+        "feeding": 246.2,
+        "activity": 97.0
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.86,
+        "rumination": 443.8,
+        "feeding": 227.2,
+        "activity": 90.2
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.24,
+        "rumination": 409.8,
+        "feeding": 202.3,
+        "activity": 81.6
+      },
+      {
+        "day": "आज",
+        "temperature": 39.6,
+        "rumination": 371.7,
+        "feeding": 180.5,
+        "activity": 70.9
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-SOL-TAG-1021",
+    "tag_number": "गाय #22 (गोदावरी)",
+    "district": "Solapur",
+    "breed": "Khillari (खिल्लारी)",
+    "age": 5.4,
+    "status": "WARNING",
+    "condition": "LSD",
+    "current_vitals": {
+      "temperature": 39.3,
+      "temp_delta_24h": 0.37,
+      "rumination_minutes": 359.8,
+      "feeding_minutes": 137.9,
+      "activity_index": 68.3
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.34,
+        "rumination": 488.5,
+        "feeding": 233.0,
+        "activity": 106.7
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.35,
+        "rumination": 488.0,
+        "feeding": 232.5,
+        "activity": 107.8
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.34,
+        "rumination": 486.1,
+        "feeding": 233.6,
+        "activity": 108.1
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.4,
+        "rumination": 484.1,
+        "feeding": 231.6,
+        "activity": 106.9
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.7,
+        "rumination": 455.0,
+        "feeding": 211.6,
+        "activity": 98.4
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.1,
+        "rumination": 418.0,
+        "feeding": 186.2,
+        "activity": 91.3
+      },
+      {
+        "day": "आज",
+        "temperature": 39.49,
+        "rumination": 381.6,
+        "feeding": 167.9,
+        "activity": 80.4
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-NAS-TAG-1022",
+    "tag_number": "गाय #23 (राणी)",
+    "district": "Nashik",
+    "breed": "Murrah Buffalo (मुर्रा म्हैस)",
+    "age": 6.2,
+    "status": "WARNING",
+    "condition": "BRD",
+    "current_vitals": {
+      "temperature": 39.41,
+      "temp_delta_24h": 0.34,
+      "rumination_minutes": 332.6,
+      "feeding_minutes": 205.6,
+      "activity_index": 67.4
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.57,
+        "rumination": 459.4,
+        "feeding": 293.9,
+        "activity": 105.4
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.56,
+        "rumination": 461.5,
+        "feeding": 292.4,
+        "activity": 104.8
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.59,
+        "rumination": 463.3,
+        "feeding": 291.6,
+        "activity": 104.8
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.61,
+        "rumination": 455.1,
+        "feeding": 289.8,
+        "activity": 105.4
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.91,
+        "rumination": 424.9,
+        "feeding": 272.7,
+        "activity": 98.0
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.23,
+        "rumination": 385.5,
+        "feeding": 251.9,
+        "activity": 89.6
+      },
+      {
+        "day": "आज",
+        "temperature": 39.59,
+        "rumination": 348.4,
+        "feeding": 233.5,
+        "activity": 80.7
+      }
+    ]
+  },
+  {
+    "animal_id": "MAH-SAT-TAG-1023",
+    "tag_number": "गाय #24 (गंगा)",
+    "district": "Satara",
+    "breed": "Red Kandhari (लाल कंधारी)",
+    "age": 7.0,
+    "status": "WARNING",
+    "condition": "BRD",
+    "current_vitals": {
+      "temperature": 39.3,
+      "temp_delta_24h": 0.39,
+      "rumination_minutes": 292.2,
+      "feeding_minutes": 162.3,
+      "activity_index": 66.8
+    },
+    "history_7d": [
+      {
+        "day": "सोम",
+        "temperature": 38.51,
+        "rumination": 446.7,
+        "feeding": 248.6,
+        "activity": 107.1
+      },
+      {
+        "day": "मंगळ",
+        "temperature": 38.48,
+        "rumination": 446.9,
+        "feeding": 251.5,
+        "activity": 105.7
+      },
+      {
+        "day": "बुध",
+        "temperature": 38.48,
+        "rumination": 442.8,
+        "feeding": 251.5,
+        "activity": 107.5
+      },
+      {
+        "day": "गुरू",
+        "temperature": 38.52,
+        "rumination": 441.9,
+        "feeding": 247.8,
+        "activity": 106.7
+      },
+      {
+        "day": "शुक्र",
+        "temperature": 38.83,
+        "rumination": 407.8,
+        "feeding": 232.2,
+        "activity": 97.6
+      },
+      {
+        "day": "शनि",
+        "temperature": 39.16,
+        "rumination": 371.6,
+        "feeding": 209.2,
+        "activity": 90.9
+      },
+      {
+        "day": "आज",
+        "temperature": 39.51,
+        "rumination": 327.5,
+        "feeding": 190.2,
+        "activity": 82.7
+      }
+    ]
+  }
+]

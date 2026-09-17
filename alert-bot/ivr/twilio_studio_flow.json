@@ -1,0 +1,83 @@
+{
+  "description": "PashuRakshak Automated Marathi IVR Alert Flow for Rural Dairy Farmers",
+  "states": [
+    {
+      "name": "Trigger",
+      "type": "trigger",
+      "transitions": [
+        {
+          "event": "incomingCall",
+          "next": "Greeting_Marathi"
+        },
+        {
+          "event": "outboundCall",
+          "next": "Outbound_Alert_Marathi"
+        }
+      ]
+    },
+    {
+      "name": "Outbound_Alert_Marathi",
+      "type": "say-play",
+      "properties": {
+        "voice": "Polly.Aditi",
+        "language": "mr-IN",
+        "say": "नमस्कार शेतकरी बंधू. मी पशुरक्षक प्रणालीवरून बोलत आहे. आपल्या गोठ्यातील गाय क्रमांक ४२ मध्ये कासदाह आजाराची पूर्वसूचना मिळाली आहे. लक्षणे दिसण्याच्या दोन दिवस आधी ही माहिती मिळाली आहे. तातडीने दूध वेगळे काढा आणि पशुवैद्यकाला दाखवा. अधिक माहितीसाठी १ दाबा, सरकारी पशुसंवर्धन हेल्पलाईन १९६२ ला जोडण्यासाठी २ दाबा."
+      },
+      "transitions": [
+        {
+          "event": "audioComplete",
+          "next": "Gather_Farmer_Input"
+        }
+      ]
+    },
+    {
+      "name": "Gather_Farmer_Input",
+      "type": "gather-input-on-call",
+      "properties": {
+        "num_digits": 1,
+        "timeout": 8
+      },
+      "transitions": [
+        {
+          "event": "keypress",
+          "conditions": [
+            {
+              "friendly_name": "Pressed 1 - Details",
+              "arguments": ["{{widgets.Gather_Farmer_Input.Digits}}"],
+              "value": "1"
+            }
+          ],
+          "next": "Play_Detailed_Advice"
+        },
+        {
+          "event": "keypress",
+          "conditions": [
+            {
+              "friendly_name": "Pressed 2 - Connect Helpline",
+              "arguments": ["{{widgets.Gather_Farmer_Input.Digits}}"],
+              "value": "2"
+            }
+          ],
+          "next": "Forward_To_1962_Helpline"
+        }
+      ]
+    },
+    {
+      "name": "Play_Detailed_Advice",
+      "type": "say-play",
+      "properties": {
+        "voice": "Polly.Aditi",
+        "language": "mr-IN",
+        "say": "कासेला कोमट पाण्याने स्वच्छ करा. पोटॅशियम परमँगनेटच्या पाण्याने थन धुवा. आपल्या मोबाईलवर व्हॉट्सॲप मेसेज पाठवण्यात आला आहे. धन्यवाद."
+      }
+    },
+    {
+      "name": "Forward_To_1962_Helpline",
+      "type": "connect-call-to",
+      "properties": {
+        "noun": "number",
+        "phone_number": "1962"
+      }
+    }
+  ]
+}

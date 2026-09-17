@@ -1,0 +1,92 @@
+[
+  {
+    "id": "MAHA-SOP-MASTITIS-01",
+    "disease": "Mastitis",
+    "disease_mr": "कासदाह / मस्टायटीस",
+    "authority": "Govt. of Maharashtra Animal Husbandry Department & ICAR-NDRI",
+    "source_title": "Maharashtra Bovine Mastitis Prevention and Control Protocol (Circular AH-1962/M-4)",
+    "section": "कलम ३.२: प्राथमिक तपासणी व तात्काळ जैविक अलगीकरण",
+    "keywords": [
+      "कास", "कास सुजली", "कास गरम", "दूध कमी", "दुधात गुठळ्या", "चिबड", "रक्ताळलेले दूध", "स्तन", "सूज",
+      "mastitis", "udder", "swollen udder", "hot udder", "clots in milk", "blood in milk", "teat", "drop in milk",
+      "थन", "थन में सूजन", "दूध कम", "छिछड़े"
+    ],
+    "subclinical_biomarkers": "Pre-clinical rumination drop of 35% with mild core pyrexia (+0.6°C to +1.0°C) 48-72h prior to clot formation.",
+    "clinical_evidence": "सोमॅटिक सेल काउंट (SCC) > २,००,००० पेशी/मिली झाल्यास उप-क्लिनिकल कासदाह निश्चित होतो. कासेमध्ये स्टॅफिलोकोकस किंवा स्ट्रेप्टोकोकस जीवाणूंचा संसर्ग असतो.",
+    "isolation_protocol_mr": "आजारी जनावराचे दूध शेवटी वेगळ्या भांड्यात काढावे. दूध काढणाऱ्या व्यक्तीने पोटॅशियम परमँगनेटच्या सौम्य द्रावणाने हात स्वच्छ धुवावेत.",
+    "treatment_and_firstaid_mr": "१. कासेवर कोमट पाण्याची घडी घालावी अथवा कोरफड व हळदीचा लेप लावावा.\n२. दूध पूर्ण पिळून काढावे (वारंवार स्ट्रिपिंग).\n३. तात्काळ पशुवैद्यकाच्या सल्ल्याने इंट्रा-मॅमरी ट्युब (उदा. सेफ्टिओफर किंवा ॲमॉक्सिसिलिन) द्यावी.",
+    "ayurvedic_evm_mr": "कोरफडीचा गर २५० ग्रॅम + ५० ग्रॅम हळद पावडर + १५ ग्रॅम चुना एकत्र घोटून दिवसातून ३ वेळा कासेवर लावावा (तमिळनाडू पशुवैद्यकीय विद्यापीठ EVM फॉर्म्युलेशन)."
+  },
+  {
+    "id": "MAHA-SOP-FMD-02",
+    "disease": "Foot-and-Mouth Disease (FMD)",
+    "disease_mr": "लाळ्या खुरकूत (FMD)",
+    "authority": "National Animal Disease Control Programme (NADCP) & Govt. of Maharashtra",
+    "source_title": "Standard Operating Procedure for FMD Outbreak Management & Ring Vaccination (SOP/FMD-2024)",
+    "section": "कलम ५.१: बायो-सिक्युरिटी, अलगीकरण व ५ किमी रिंग व्हॅक्सिनेशन",
+    "keywords": [
+      "लाळ", "लाळ गळणे", "तोंडातून लाळ", "लाळ्या", "खुरकूत", "तोंडाला फोड", "जिभेवर व्रण", "खुर सुजले", "लंगडत चालते",
+      "fmd", "foot and mouth", "salivation", "drooling saliva", "blisters in mouth", "tongue ulcers", "limping", "hoof lesion",
+      "लार टपकना", "मुंह में छाले", "खुर में घाव", "लंगड़ाना"
+    ],
+    "subclinical_biomarkers": "Acute hyperthermia (>40.5°C), 70% collapse in rumination, 65% reduction in locomotion prior to vesicle rupture.",
+    "clinical_evidence": "अपथस व्हायरस (Aphthovirus - O, A, Asia-1 स्ट्रेन) मुळे होणारा अत्यंत संसर्गजन्य रोग. प्रादुर्भावाच्या ५ किमी परिघात तात्काळ रिंग लसीकरण करणे अनिवार्य आहे.",
+    "isolation_protocol_mr": "अतितातडीचे! जनावराला इतर सर्व पशुंपासून किमान ५० फूट लांब स्वतंत्र हवेशीर गोठ्यात हलवावे. गोठ्याच्या प्रवेशद्वारावर चुन्याची पावडर टाकावी.",
+    "treatment_and_firstaid_mr": "१. तोंडातील फोडांवर बोरो-ग्लिसरीन किंवा तुरटीच्या पाण्याने (१% द्रावण) दिवसातून दोनदा हलक्या हाताने लावावे.\n२. खुरांमधील व्रण पोटॅशियम परमँगनेट (१:१०००) च्या द्रावणाने धुवून त्यावर अँटिसेप्टिक मलम लावावा.\n३. जनावराला मऊ आणि पातळ पेज, मऊ हिरवा चारा खायला द्यावा.",
+    "ayurvedic_evm_mr": "तुळशीची पाने, हळद, लसूण आणि जिरे खोबरेल तेलात गरम करून तोंडातील व खुरांमधील फोडांवर लावावे."
+  },
+  {
+    "id": "MAHA-SOP-LSD-03",
+    "disease": "Lumpy Skin Disease (LSD)",
+    "disease_mr": "लम्पी त्वचा रोग (LSD)",
+    "authority": "Govt. of Maharashtra Animal Husbandry Department & ICAR-NIVEDI",
+    "source_title": "Comprehensive Advisory on Lumpy Skin Disease Surveillance & Goat Pox Vaccination (Cir-AH/LSD-88)",
+    "section": "कलम २.४: डास-माशा नियंत्रण, विलगीकरण व शेळी देवी लस (Goat Pox Vaccine)",
+    "keywords": [
+      "लम्पी", "अंगावर गाठी", "त्वचेवर फोड", "लहान गाठी", "डोळ्यातून पाणी", "नाकातून स्त्राव", "गाठी फुटल्या",
+      "lumpy", "lumpy skin", "nodules", "skin bumps", "watery eyes", "nasal discharge", "skin lesions",
+      "लम्पी स्किन", "गांठ", "त्वचा पर फफोले"
+    ],
+    "subclinical_biomarkers": "Biphasic fever (40.0°C - 41.5°C) with persistent 45% activity depression 72-96h before generalized cutaneous nodules appear.",
+    "clinical_evidence": "कॅप्रिपॉक्स व्हायरस (Capripoxvirus) मुळे होणारा संसर्गजन्य रोग. डास, माश्या आणि गोचीड यांच्यामार्फत वेगाने प्रसार होतो.",
+    "isolation_protocol_mr": "संक्रमित जनावरास मच्छरदाणी किंवा गोठ्यात निंबोळी धूर करून ठेवावे. बाधित जनावरांचे दूध उकळूनच वापरावे.",
+    "treatment_and_firstaid_mr": "१. तापासाठी पॅरासिटामॉल / मेलॉक्सिकॅम व्हेटर्नरी डॉक्टरांच्या सल्ल्याने द्यावे.\n२. अंगावरील गाठींवर कडूनिंब आणि हळदीचा काढा फवारावा.\n३. निरोगी जनावरांना त्वरित गोट पॉक्स लस (३ मिली सब-क्युट) टोचून घ्यावी.",
+    "ayurvedic_evm_mr": "विड्याची पाने १०, काळे मिरे १० ग्रॅम, मीठ १० ग्रॅम, गूळ एकत्र वाटून दिवसातून ३ वेळा गोळ्या करून खाऊ घालाव्यात."
+  },
+  {
+    "id": "MAHA-SOP-BRD-04",
+    "disease": "Bovine Respiratory Disease (BRD)",
+    "disease_mr": "श्वसनदाह / न्यूमोनिया (BRD)",
+    "authority": "Maharashtra State Veterinary Council & ICAR-IVRI",
+    "source_title": "Clinical Guidelines for Bovine Bronchopneumonia & Shipping Fever in Dairy Herds",
+    "section": "कलम ४.१: श्वसन गती नियंत्रण व अँटीमायक्रोबियल व्यवस्थापन",
+    "keywords": [
+      "खोकला", "श्वास घ्यायला त्रास", "धाप लागणे", "नाकातून शेंबूड", "घरघर आवाज", "न्यूमोनिया",
+      "cough", "respiratory", "breathing difficulty", "panting", "nasal discharge", "wheezing", "pneumonia", "brd",
+      "खांसी", "सांस लेने में दिक्कत", "नाक से पानी", "हांफना"
+    ],
+    "subclinical_biomarkers": "Sustained temperature elevation (>39.8°C) with progressive 40% decline in feeding and resting time.",
+    "clinical_evidence": "पाश्चरेला मल्टोसिडा (Pasteurella multocida) किंवा मॅनहेमिया हेमोलाइटिका जीवाणू व विषाणूंच्या संयुक्त संसर्गामुळे फुफ्फुसात दाह निर्माण होतो.",
+    "isolation_protocol_mr": "जनावराला कोरड्या, हवेशीर आणि उष्ण ठिकाणी ठेवावे. रात्रीच्या वेळी थंड वाऱ्यापासून संरक्षण करावे.",
+    "treatment_and_firstaid_mr": "१. जनावरास निलगिरी तेलाची अथवा ओव्याच्या पाण्याची वाफ द्यावी.\n२. छातीवर गरम पाण्याच्या पिशवीने शेक द्यावा.\n३. व्हेटर्नरी डॉक्टरांकडून फ्लोर्फेनिकॉल किंवा टिलमिकोसिनचे योग्य डोस द्यावेत.",
+    "ayurvedic_evm_mr": "आले, तुळस, मिरी, लवंग आणि मध एकत्र करून चाटण द्यावे."
+  },
+  {
+    "id": "MAHA-SOP-KETOSIS-05",
+    "disease": "Bovine Ketosis (Acetonemia)",
+    "disease_mr": "केटॉसिस (रक्तातील शर्करा कमतरता)",
+    "authority": "National Dairy Development Board (NDDB) & Maharashtra Animal Husbandry",
+    "source_title": "Metabolic Disorders in High-Yielding Dairy Cows: Prevention & Energy Supplementation Protocols",
+    "section": "कलम १.३: नकारात्मक ऊर्जा संतुलन व प्रोपलीन ग्लायकॉल डोस",
+    "keywords": [
+      "चारा खात नाही", "सुस्त", "दूध खूप घटले", "तोंडातून गोडसर वास", "कोरडी विष्ठा", "वजन कमी",
+      "ketosis", "off feed", "lethargic", "sweet breath", "acetone smell", "rapid weight loss",
+      "कीटोसिस", "चारा न खाना", "कमजोरी", "दूध कम होना"
+    ],
+    "subclinical_biomarkers": "Severe rumination collapse (-55%) with normal or sub-normal body temperature (38.0°C - 38.3°C) in early lactation.",
+    "clinical_evidence": "विण्यानंतर पहिल्या २-६ आठवड्यांत ऊर्जेची तीव्र कमतरता (Negative Energy Balance) निर्माण होऊन रक्तात आणि दुधात कीटोन बॉडीज (BHBA > १.२ mmol/L) वाढतात.",
+    "isolation_protocol_mr": "हा संसर्गजन्य रोग नाही. जनावरास इतर जनावरांपासून वेगळे करण्याची गरज नाही, परंतु त्याला विशेष पोषक आहार देणे आवश्यक आहे.",
+    "treatment_and_firstaid_mr": "१. प्रोपलीन ग्लायकॉल (Propylene Glycol) २०० ते ३०० मिली दिवसातून दोनदा सलग ३-४ दिवस तोंडावाटे पाजावे.\n२. २५% किंवा ५०% डेक्सट्रोज (Dextrose IV) व्हेटर्नरी डॉक्टरांकडून नसेतून टोचून घ्यावे.\n३. आहारात गूळ (२५० ग्रॅम) आणि बायपास फॅटचा समावेश करावा.",
+    "ayurvedic_evm_mr": "गूळ २०० ग्रॅम + ओवा ५० ग्रॅम + सुंठ पावडर २० ग्रॅम एकत्र करून सकाळ-संध्याकाळ द्यावे."
+  }
+]

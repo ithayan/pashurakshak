@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>पशुरक्षक - शेतकरी पशुआरोग्य सुरक्षा प्रणाली | PashuRakshak</title>
+  <meta name="description" content="AI-Powered Livestock Health Surveillance Platform for Rural Farmers (SIH Govt of Maharashtra)">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐮</text></svg>">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Top Sticky Header -->
+    <header class="app-header">
+      <div class="brand-section">
+        <div class="brand-logo">🐮</div>
+        <div>
+          <h1 class="brand-title" data-i18n="app_title">पशुरक्षक</h1>
+          <span class="brand-subtitle" data-i18n="app_subtitle">शेतकरी पशुआरोग्य सुरक्षा</span>
+        </div>
+      </div>
+      <div class="header-controls">
+        <span id="backendStatusIndicator" class="online-indicator live" title="Backend Connected"></span>
+        <select id="langSelect" class="lang-dropdown" aria-label="भाषा निवडा">
+          <option value="mr">मराठी (मराठी)</option>
+          <option value="hi">हिन्दी (Hindi)</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- Low-Bandwidth Mode Notification Bar -->
+    <div class="low-bandwidth-banner">
+      <span data-i18n="offline_notice">📶 कमी इंटरनेट बॅण्डविड्थ मोड सक्रिय (Low-Bandwidth Mode)</span>
+      <span style="font-weight: 700;">2G/3G OK</span>
+    </div>
+
+    <!-- Main Views Area -->
+    <main class="main-content">
+
+      <!-- VIEW 1: HERD DASHBOARD -->
+      <section id="viewDashboard">
+        <!-- Filter Chips -->
+        <div class="filter-bar">
+          <button class="filter-chip active" data-filter="all" data-i18n="filter_all">सर्व जनावरे</button>
+          <button class="filter-chip" data-filter="critical" data-i18n="filter_high_risk">धोकादायक (तातडीचे)</button>
+          <button class="filter-chip" data-filter="warning" data-i18n="filter_warning">पूर्वसूचना</button>
+          <button class="filter-chip" data-filter="healthy" data-i18n="filter_healthy">निरोगी</button>
+        </div>
+
+        <!-- Herd Cards Feed -->
+        <div id="herdCardsContainer" class="herd-cards-container">
+          <!-- Dynamic cards injected by app.js -->
+        </div>
+      </section>
+
+      <!-- VIEW 2: ANIMAL DETAIL & CHARTS -->
+      <section id="viewDetail" style="display: none;">
+        <div class="back-bar">
+          <button class="back-btn" onclick="showTab('dashboard')" data-i18n="btn_back_to_herd">← मागे गोठ्याकडे</button>
+        </div>
+
+        <div class="detail-card">
+          <h2 id="detailHeaderName" class="cow-name" style="font-size: 20px;">गाय #४२ (लक्ष्मी)</h2>
+          <span id="detailHeaderSub" class="cow-breed" style="display: block; margin-bottom: 14px;">गिर संकर • MAH-PUN-042</span>
+
+          <h4 style="font-size: 14px; color: #34D399; margin-bottom: 8px;" data-i18n="trend_charts">मागील ७ दिवसांचा कल आलेख</h4>
+
+          <!-- Metric Switch Buttons -->
+          <div class="metric-selector">
+            <button class="metric-btn active" data-metric="temperature" onclick="setChartMetric('temperature')">🌡️ शरीराचे तापमान</button>
+            <button class="metric-btn" data-metric="rumination" onclick="setChartMetric('rumination')">🌾 रवंथ वेळ (min)</button>
+            <button class="metric-btn" data-metric="feeding" onclick="setChartMetric('feeding')">🥣 चारा खाणे (min)</button>
+            <button class="metric-btn" data-metric="activity" onclick="setChartMetric('activity')">🏃 हालचाल निर्देशांक</button>
+          </div>
+
+          <!-- Pure SVG Chart Area -->
+          <div id="vitalsChartArea" class="chart-wrapper"></div>
+        </div>
+
+        <!-- Vaccination & Medical Record -->
+        <div class="detail-card">
+          <h4 style="font-size: 14px; color: #E2E8F0; margin-bottom: 10px;" data-i18n="vaccination_log">लसीकरण व उपचार नोंदवही</h4>
+          <div id="vaccinationLogContainer"></div>
+        </div>
+      </section>
+
+      <!-- VIEW 3: SYMPTOM REPORT & AI TRIAGE -->
+      <section id="viewSymptoms" style="display: none;">
+        <div class="detail-card">
+          <h2 style="font-size: 18px; margin-bottom: 6px;" data-i18n="report_screen_title">जनावराची लक्षणे सांगा</h2>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px;" data-i18n="report_screen_desc">
+            तुमच्या भाषेत जनावराची लक्षणे लिहा किंवा माईक दाबून बोला. आमची AI प्रणाली तात्काळ आजार ओळखेल आणि घरगुती प्रथमोपचार सांगेल.
+          </p>
+
+          <div class="symptom-form">
+            <textarea id="symptomInput" class="symptom-textarea" placeholder="उदा. गायीचे दूध अचानक कमी झाले आहे, कास गरम आणि सुजलेली दिसते..." data-i18n="symptom_placeholder"></textarea>
+
+            <div class="symptom-btn-row">
+              <button id="btnVoiceRecord" class="btn btn-secondary" style="flex: 1;" data-i18n="btn_record_voice">
+                🎤 आवाज रेकॉर्ड करा
+              </button>
+              <button class="btn btn-secondary" style="flex: 1;" onclick="alert('कॅमेरा उघडला - फोटो जोडला गेला!')" data-i18n="btn_add_photo">
+                📷 फोटो जोडा
+              </button>
+            </div>
+
+            <button id="btnAnalyzeSymptoms" class="btn btn-primary" style="padding: 12px; font-size: 15px;" data-i18n="btn_analyze_symptoms">
+              🔍 AI द्वारे आजार तपासा
+            </button>
+          </div>
+
+          <!-- AI Triage Result Box -->
+          <div id="triageResultCard" class="triage-result-box">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <h4 data-i18n="triage_result_title">AI निदान व तत्काळ सल्ला</h4>
+              <span id="triageUrgency" class="status-pill pill-critical">अतितातडीचे</span>
+            </div>
+
+            <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px; margin-bottom: 12px;">
+              <span style="font-size: 12px; color: var(--text-dim);" data-i18n="predicted_disease">संभाव्य आजार:</span>
+              <strong id="triageCondition" style="font-size: 16px; color: #FFFFFF; display: block;">कासदाह / मस्टायटीस</strong>
+            </div>
+
+            <strong style="font-size: 13px; color: #F8FAFC;" data-i18n="immediate_actions">शेतकऱ्यांनी लगेच करावयाची कृती:</strong>
+            <ul id="triageActionsList" class="triage-actions-list"></ul>
+
+            <button id="btnPlayAudioAdvice" class="btn btn-secondary" style="width: 100%; margin-top: 10px; border-color: #10B981; color: #34D399;" data-i18n="listen_audio_advice">
+              🔊 मराठीत सल्ला ऐका
+            </button>
+
+            <p style="font-size: 11px; color: #94A3B8; text-align: center; margin-top: 10px;" data-i18n="gov_helpline">
+              महाराष्ट्र शासन मोफत पशुसंवर्धन हेल्पलाईन: १९६२
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW 4: ALERTS FEED -->
+      <section id="viewAlerts" style="display: none;">
+        <div id="alertsFeedContainer"></div>
+      </section>
+
+      <!-- VIEW 5: LIVE BARN CAMERA FEED (गोठा थेट कॅमेरा) -->
+      <section id="viewCamera" style="display: none;">
+        <div class="detail-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <h2 style="font-size: 18px; color: #FFFFFF;" data-i18n="tab_camera">गोठा कॅमेरा (थेट पाळत)</h2>
+            <span id="farmerCameraStatusBadge" class="status-pill pill-critical">● थेट (Live AI)</span>
+          </div>
+          <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">
+            तुमच्या गोठ्यातील सीसीटीव्ही किंवा मोबाईल कॅमेरा वापरून आजारी जनावरे व असामान्य हालचाली (दीर्घकाळ झोपून राहणे) ओळखा.
+          </p>
+
+          <!-- Video / Canvas Feed Player -->
+          <div class="farmer-cctv-wrapper">
+            <canvas id="farmerCCTVCanvas"></canvas>
+            <video id="farmerWebcamVideo" playsinline autoplay muted style="display: none;"></video>
+            <div class="farmer-cctv-hud">
+              <span id="farmerHudLocation">📍 बारामती शेड #०४ • TAG-1042</span>
+              <span id="farmerHudFps" style="color: #34D399;">28.8 FPS</span>
+            </div>
+          </div>
+
+          <!-- Camera Controls -->
+          <div style="display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap;">
+            <button id="btnToggleFarmerWebcam" class="btn btn-primary" style="flex: 1; min-width: 140px;" onclick="toggleFarmerCamera()">
+              📷 माझा कॅमेरा सुरू करा
+            </button>
+            <button class="btn btn-secondary" style="flex: 1; min-width: 140px;" onclick="document.getElementById('farmerVideoUploadInput').click()">
+              📁 व्हिडिओ क्लिप तपासा
+            </button>
+            <input type="file" id="farmerVideoUploadInput" accept="video/*" style="display: none;" onchange="handleFarmerVideoUpload(event)">
+          </div>
+
+          <!-- Live Detection Report Card -->
+          <div id="farmerCameraAlertBox" class="triage-result-box" style="display: block; margin-top: 14px; border-left-color: #EF4444;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <strong style="color: #EF4444; font-size: 14px;">⚠️ AI इशारा: असामान्य वर्तन आढळले!</strong>
+              <span class="status-pill pill-critical">९४% अचूकता</span>
+            </div>
+            <div style="font-size: 13px; color: #F1F5F9; line-height: 1.4;">
+              <strong>गाय #४२ (लक्ष्मी):</strong> जनावर >१८० मिनिटांपासून एकाकी पडून आहे (Prolonged Recumbency). कासदाह किंवा तीव्र तापाची शक्यता आहे.
+            </div>
+            <div style="display: flex; gap: 8px; margin-top: 10px;">
+              <button class="btn btn-secondary" style="flex: 1; border-color: #EF4444; color: #FCA5A5;" onclick="playVoiceWarningAudio()">
+                🔊 आवाजी सतर्कता ऐका
+              </button>
+              <button class="btn btn-primary" style="flex: 1; background: #10B981;" onclick="callDoctorHelpline()">
+                📞 १९६२ डॉक्टर बोलवा
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Sticky Tab Navigation -->
+    <nav class="bottom-nav">
+      <button class="nav-tab-btn active" data-tab="dashboard">
+        <span class="tab-icon">🐄</span>
+        <span data-i18n="tab_dashboard">माझा गोठा</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="camera">
+        <span class="tab-icon">📹</span>
+        <span data-i18n="tab_camera">गोठा कॅमेरा</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="symptoms">
+        <span class="tab-icon">🩺</span>
+        <span data-i18n="tab_symptoms">लक्षणे सांगा (AI)</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="alerts">
+        <span class="tab-icon">💬</span>
+        <span data-i18n="tab_alerts">सतर्कता संदेश</span>
+      </button>
+    </nav>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

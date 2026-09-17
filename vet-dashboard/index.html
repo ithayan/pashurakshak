@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>पशुरक्षक - जिल्हा पशुवैद्यकीय नियंत्रण कक्ष (Veterinary Command Center)</title>
+  <meta name="description" content="GIS-Powered Livestock Outbreak Surveillance Command Center for Govt of Maharashtra (SIH)">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+</head>
+<body>
+
+  <!-- Command Center Header -->
+  <header class="header">
+    <div class="brand">
+      <span class="brand-badge">महाराष्ट्र शासन</span>
+      <div>
+        <h1 class="brand-title">पशुरक्षक - पशुआरोग्य नियंत्रण कक्ष</h1>
+        <span class="brand-sub">Livestock Disease Surveillance & Early Warning Command Center (SIH)</span>
+      </div>
+    </div>
+
+    <!-- Live Metrics Counter Bar -->
+    <div class="metrics-summary">
+      <div class="metric-pill red">
+        <span class="m-label">अतितातडीचे रुग्ण (Red)</span>
+        <span id="metricCriticalCases" class="m-val">३</span>
+      </div>
+      <div class="metric-pill orange">
+        <span class="m-label">एकूण पूर्वसूचना (Flags)</span>
+        <span id="metricTotalFlags" class="m-val">११८</span>
+      </div>
+      <div class="metric-pill green">
+        <span class="m-label">सरासरी लसीकरण प्रमाण</span>
+        <span id="metricAvgVaccine" class="m-val">७७%</span>
+      </div>
+    </div>
+
+    <!-- Live CCTV Button & Officer Profile -->
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <button id="btnOpenCCTV" class="btn-cctv-launch" onclick="openCCTVModal()">
+        <span class="live-dot"></span>
+        <span>📹 थेट सीसीटीव्ही पाळत (Live CCTV)</span>
+      </button>
+
+      <div class="officer-profile">
+        <span class="officer-badge">👨‍⚕️ डॉ. पाटील (जिल्हा पशुवैद्यकीय अधिकारी)</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Workspace Grid -->
+  <div class="workspace">
+
+    <!-- Left: GIS Map Section -->
+    <section class="gis-section">
+      <!-- Map Controls Toolbar -->
+      <div class="gis-toolbar">
+        <span class="toolbar-title">🗺️ महाराष्ट्र GIS नकाशा</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggleVaccineOverlay">
+          <span>लसीकरण प्रमाण स्तर (Vaccination Overlay)</span>
+        </label>
+      </div>
+
+      <!-- Leaflet Map Container -->
+      <div id="leafletMap"></div>
+
+      <!-- Map Legend -->
+      <div class="gis-legend">
+        <strong style="display: block; margin-bottom: 6px; color: #FFF;">नकाशा सूची (Legend)</strong>
+        <div class="legend-item">
+          <span class="legend-dot" style="background: #EF4444; box-shadow: 0 0 6px #EF4444;"></span>
+          <span>गंभीर धोका / संसर्ग केंद्र (Critical Cluster)</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background: #F59E0B;"></span>
+          <span>मध्यम पूर्वसूचना (Sub-clinical Warning)</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background: #10B981;"></span>
+          <span>नियंत्रणात / उच्च लसीकरण (>८०%)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right: Alert Triage Queue -->
+    <section class="triage-section">
+      <div class="queue-header">
+        <span class="queue-title">🚨 तातडीची पूर्वसूचना रांग (Triage Queue)</span>
+        <div class="queue-filters">
+          <button class="q-btn active" data-filter="all" onclick="setQueueFilter('all')">सर्व</button>
+          <button class="q-btn red" data-filter="red" onclick="setQueueFilter('red')">गंभीर (Red)</button>
+          <button class="q-btn orange" data-filter="orange" onclick="setQueueFilter('orange')">इशारा (Orange)</button>
+        </div>
+      </div>
+
+      <!-- Case Cards List -->
+      <div id="alertQueueList" class="queue-list">
+        <!-- Injected dynamically by alert_queue.js -->
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Vet Dispatch Modal -->
+  <div id="dispatchModal" class="modal-overlay">
+    <div class="modal-box">
+      <h3 id="modalCaseTitle" class="modal-title">पशुवैद्यकीय पथक रवाना</h3>
+      <p id="modalCaseDesc" class="modal-desc"></p>
+      <div class="modal-actions">
+        <button class="action-btn" onclick="closeDispatchModal()">रद्द करा</button>
+        <button class="action-btn dispatch" onclick="confirmDispatch()">🚀 आदेश जारी करा</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live CCTV Surveillance Modal -->
+  <div id="cctvModal" class="modal-overlay">
+    <div class="cctv-modal-box">
+      <!-- Header -->
+      <div class="cctv-modal-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="font-size: 20px;">📹</span>
+          <div>
+            <h3 id="cctvChannelTitle" style="color: #FFFFFF; font-size: 16px; margin-bottom: 2px;">कॅमेरा १: बारामती गोठा (पूर्व शेड)</h3>
+            <span style="font-size: 12px; color: #94A3B8;">Edge AI Computer Vision Behavioral Tracking (YOLO-v8)</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span id="cctvFpsText" style="font-family: monospace; font-size: 12px; color: #34D399; background: rgba(16,185,129,0.15); padding: 4px 8px; border-radius: 4px;">29.2 FPS</span>
+          <button class="action-btn" onclick="closeCCTVModal()" style="padding: 6px 12px;">✕ बंद करा</button>
+        </div>
+      </div>
+
+      <!-- Channels Toolbar -->
+      <div class="cctv-channels-bar">
+        <button class="cctv-ch-btn active" data-channel="CH1" onclick="selectCCTVChannel('CH1')">🎥 बारामती गोठा (CH-01)</button>
+        <button class="cctv-ch-btn" data-channel="CH2" onclick="selectCCTVChannel('CH2')">🎥 संगमनेर कळप (CH-02 - खुरदाह)</button>
+        <button class="cctv-ch-btn" data-channel="CH3" onclick="selectCCTVChannel('CH3')">🎥 कोल्हापूर डेअरी (CH-03)</button>
+        <button class="cctv-ch-btn" data-channel="WEBCAM" onclick="selectCCTVChannel('WEBCAM')" style="border-color: #EF4444; color: #FCA5A5;">🔴 थेट स्थानिक कॅमेरा (Live WebCam)</button>
+      </div>
+
+      <!-- CCTV Body: Viewport + Sidebar -->
+      <div class="cctv-body-grid">
+        <!-- Live Canvas Viewport -->
+        <div class="cctv-viewport-pane">
+          <canvas id="cctvCanvas"></canvas>
+          <video id="cctvWebcamVideo" playsinline autoplay muted style="display: none;"></video>
+        </div>
+
+        <!-- Sidebar Telemetry & Actions -->
+        <div class="cctv-sidebar-pane">
+          <div class="cctv-meta-card">
+            <span style="color: #64748B; display: block; margin-bottom: 4px;">स्थान / शेड तपशील:</span>
+            <strong id="cctvLocationText" style="color: #38BDF8; font-size: 13px;">बारामती (पुणे) • शेड #०४</strong>
+            <span id="cctvStreamUrlText" style="display: block; font-family: monospace; font-size: 10px; color: #94A3B8; margin-top: 4px; word-break: break-all;">rtsp://baramati-farm.maha-agro.gov:554/live/ch1</span>
+          </div>
+
+          <div>
+            <span style="font-size: 12px; font-weight: 700; color: #CBD5E1; display: block; margin-bottom: 8px;">
+              🎯 कॅमेऱ्यातील जनावरे व AI वर्तन विश्लेषण:
+            </span>
+            <div id="cctvDetectedAnimalsList"></div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div style="margin-top: auto; display: flex; flex-direction: column; gap: 8px;">
+            <button id="btnCCTVScan" class="action-btn" style="width: 100%; justify-content: center; background: #1E293B; border-color: #38BDF8; color: #38BDF8;" onclick="triggerCCTVQuickScan()">
+              ⚡ तात्काळ वर्तन स्कॅन (Run Deep AI Scan)
+            </button>
+            <button class="action-btn dispatch" style="width: 100%; justify-content: center;" onclick="dispatchFieldVetFromCCTV()">
+              🚑 या शेडसाठी मोबाईल व्हेटर्नरी व्हॅन पाठवा
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/gis_map.js"></script>
+  <script src="js/alert_queue.js"></script>
+  <script src="js/cctv_monitor.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
