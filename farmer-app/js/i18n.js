@@ -5,7 +5,7 @@
 
 const I18N = {
   mr: {
-    app_title: "पशुरक्षक",
+    app_title: "लक्ष्मीAI (LaxmiAI)",
     app_subtitle: "शेतकरी पशुआरोग्य सुरक्षा प्रणाली",
     tagline: "कृत्रिम बुद्धिमत्ता आधारित जनावरांचे आजार लवकर ओळखणारी यंत्रणा",
     tab_dashboard: "माझा गोठा",
@@ -54,7 +54,7 @@ const I18N = {
     healthy_tip: "पशूचे आरोग्य उत्तम आहे. नेहमीप्रमाणे आहार चालू ठेवा."
   },
   hi: {
-    app_title: "पशुरक्षक",
+    app_title: "लक्ष्मीAI (LaxmiAI)",
     app_subtitle: "किसान पशु स्वास्थ्य सुरक्षा प्रणाली",
     tagline: "एआई आधारित पशु रोग पूर्व चेतावनी प्रणाली",
     tab_dashboard: "मेरा बाड़ा",
@@ -103,7 +103,7 @@ const I18N = {
     healthy_tip: "पशु पूर्णतः स्वस्थ है। नियमित देखभाल जारी रखें।"
   },
   en: {
-    app_title: "PashuRakshak",
+    app_title: "LaxmiAI",
     app_subtitle: "Farmer Livestock Health Guard",
     tagline: "AI-Powered Early Warning Livestock Disease Surveillance",
     tab_dashboard: "My Herd",

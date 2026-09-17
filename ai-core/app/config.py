@@ -22,14 +22,14 @@ MEDIUM_RISK_THRESHOLD = float(os.getenv("MEDIUM_RISK_THRESHOLD", "0.40"))
 DEFAULT_LANGUAGE = os.getenv("DEFAULT_LANGUAGE", "mr")
 
 # API Configuration
-API_TITLE = "PashuRakshak AI Core API"
+API_TITLE = "LaxmiAI (लक्ष्मीAI) Core API"
 API_VERSION = "1.0.0"
 API_DESCRIPTION = """
-**PashuRakshak (पशुरक्षक)** - AI-Powered Livestock Health Surveillance Platform
+**LaxmiAI (लक्ष्मीAI)** - AI-Powered Livestock Health Surveillance Platform
 SIH Problem Statement: Govt. of Maharashtra (Early detection, prevention & management of livestock diseases).
 
 Features:
 - **Sub-module A:** Computer Vision Behavioral Anomaly Detection (Isolation, Prolonged Lying, Limping Gait)
 - **Sub-module B:** ONNX Multi-task Physiological Health Risk Predictor
-- **Sub-module C:** Multilingual Rural Symptom Triage (मराठी, हिन्दी, English)
+- **Sub-module C:** Multilingual Rural Symptom Triage with Veterinary RAG (मराठी, हिन्दी, English)
 """

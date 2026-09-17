@@ -1,4 +1,4 @@
-%% PashuRakshak Bovine Digital Twin - Compartmental Disease Simulator
+%% LaxmiAI (लक्ष्मीAI) Bovine Digital Twin - Compartmental Disease Simulator
 % Smart India Hackathon (SIH) - Govt. of Maharashtra
 % Simulates 14-day physiological dynamics for cattle (Bos indicus / crossbreeds)
 % Biomarkers: Temperature, Rumination, Feeding, Activity Index
@@ -6,7 +6,7 @@
 clear; clc; close all;
 
 fprintf('====================================================\n');
-fprintf(' PashuRakshak (पशुरक्षक) - Bovine Digital Twin Simulator \n');
+fprintf(' LaxmiAI (लक्ष्मीAI) - Bovine Digital Twin Simulator \n');
 fprintf(' Govt. of Maharashtra Livestock Health Surveillance \n');
 fprintf('====================================================\n\n');
 

@@ -48,7 +48,7 @@ app.include_router(rag_router)
 @app.get("/")
 async def root():
     return {
-        "message": "Welcome to PashuRakshak (पशुरक्षक) AI Core API",
+        "message": "Welcome to LaxmiAI (लक्ष्मीAI) Core API",
         "docs": "/docs",
         "health": "/health",
         "supported_languages": ["mr (मराठी)", "hi (हिन्दी)", "en (English)"]

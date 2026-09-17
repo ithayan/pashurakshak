@@ -1,4 +1,4 @@
-# PashuRakshak (पशुरक्षक)
+# LaxmiAI (लक्ष्मीAI)
 ### AI-Powered Livestock Health Surveillance & Early-Warning Platform
 **Smart India Hackathon (SIH) — Govt. of Maharashtra (Category: Software)**
 
@@ -12,7 +12,7 @@
 
 ## 🐄 Mission & Architecture
 
-**PashuRakshak** is a pure-software, cloud-first livestock health surveillance platform that ingests data from **existing off-the-shelf farm infrastructure** (CCTV/IP cameras via RTSP or uploaded video files, commercial ear-tag/bolus APIs, and veterinary clinical logs) with **zero custom microcontrollers or hardware**.
+**LaxmiAI (लक्ष्मीAI)** is a pure-software, cloud-first livestock health surveillance platform that ingests data from **existing off-the-shelf farm infrastructure** (CCTV/IP cameras via RTSP or uploaded video files, commercial ear-tag/bolus APIs, and veterinary clinical logs) with **zero custom microcontrollers or hardware**.
 
 It couples real-time computer vision behavioral tracking with an ONNX surrogate neural network trained on a physiologically-grounded Digital Twin simulator to detect bovine diseases (Mastitis, FMD, LSD, BRD, Ketosis) **48 to 72 hours before overt clinical signs appear**.
 
